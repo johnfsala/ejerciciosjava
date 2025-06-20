@@ -8,47 +8,78 @@
         
     </head>
     <style>
-        header
-        {
-            display:flex
-        }
-        ul
-        {
-            display: flex; 
-        }
-        li
-        {
-             margin: 10px;
-            padding: 10px;
-        }
-        section
-        {
-            display: flex;
-        }
-        a
-        {
-            display:block;
-        }
-        footer
-        {
-            display: flex;
-        }
-        h3
-        {
-            width: 80px;
-            height: 40px;
-        }
-        body
-        {
-            background-color: rgb(221, 244, 242);
-        }
+       *{
+        padding: 0%;
+        margin: 0%;
+       }
+       #header{
+        background-color: black;
+        display: flex;
+       }
+       .img1{
+        width: 100px;
+        height: 100px;
+       }
+       .ul1{
+        display: flex;
+        gap: 300px;
+        margin: 40px;
+        
+       }
+       #mein{
+        background-color: rgb(75, 75, 75)
+       }
+       .div1{
+        background-color: rgb(75, 75, 75);
+        display: flex;
+       }
+       .div2{
+        background-color: rgb(69, 110, 244);
+       }
+       .h1{
+        color: white;
+        background-color: rgb(99, 98, 98);
+       }
+       .div3{
+        display: flex;
+        gap: 30px;
+        margin: 15px;
+        text-align: center;
+        color: white;
+       }
+       .div4{
+        display: flex;
+        gap: 30px;
+        margin: 40px;
+        text-align: center;
+        color: white;
+        width: 20%;
+        height: 100%;
+       }
+       .nav{
+        background-color: blueviolet;
+        height: 50%;
+       }
+       .a{
+        color: white;
+       }
+       .div5{
+        height: 50%;
+       }
+       .div6{
+        display: flex;
+        background-color: black;
+        color: white;
+        gap: 350px;
+       }
+      
     </style>
     <body>
-        <header>
+        <header id="header">
             
-            <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/03/avatar-facebook-2632445.jpg?tf=3840x" width="150px" height="100px">
-            <nav>
-                <ul>
+            <img class="img1" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/03/avatar-facebook-2632445.jpg?tf=3840x">
+            <nav class="navi">
+                <ul class="ul1">
                 <li><a href="Informacion">Informacion</a></li>
                 <li><a href="Enlaces">Enlaces</a></li>
                 <li><a href="Contacto">Contato</a></li>
@@ -56,68 +87,73 @@
             </nav>
            
         </header>
-        <main>
-            <h1>seccion 1</h1>
-            <section>
-                <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
-                <article>casa embrujada</article>
-                <p>La "caza de brujas" (witch hunt) se refiere a la persecución, acusación y, en algunos casos, ejecución de personas, principalmente mujeres, por brujería.</p>
-            </section>
-            <br>
-            <section>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLNs4W5jKSmd6_m7J2IKuvvAJO9ecfaFrsXg&s" width="100px" height="100px">
-                <article>brujas</article>
-                <br>
-                <p>Se cuenta que tiempo atrás, por los vertientes de la Barroca, se reunían las brujas para cantar y bailar. En una de estas reuniones en plena noche, un jorobado</p>
-            </section>
-            <section>
-                <h1>seccion 2</h1>
-            </section>
-            <section>
-                <img src="https://media.istockphoto.com/id/502896185/es/foto/magia-de-libro.jpg?s=612x612&w=0&k=20&c=CVhzcmqgt6zGbjgwOX3gGyS8h8kIqKZGxsIU3cPjW3E=" width="100px" height="100px">
-                <article>Embrujo</article>
-                <br>
-                <p>Explora 4.835 fotografías e imágenes de stock sobre libro de hechizos de bruja o realiza una nueva búsqueda para encontrar más fotografías e imágenes de stock.</p>
-            </section>
-            <section>
-                <img src="https://cdn-icons-png.flaticon.com/512/6515/6515339.png" width="100px" height="100px">
-                <article>Escoba</article>
-                <br>
-                <p>Una escoba de bruja es una deformidad en una planta leñosa, típicamente un árbol, en la cual la estructura natural de la planta se ve modificada.</p>
-            </section>
-           <aside id="nav">
-                <nav id="nav">
-                     <a href="https://es.wikipedia.org/wiki/Bruja">Historia de las brujas</a>
-                     <a href="https://www.planetadelibros.com/blog/actualidad/15/articulo/libros-sobre-brujas/309">libros de las brujas</a>
-                </nav>
-                <section>
-                    <figure>
-                       <img src="data:image/jpeg;base64,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" > 
-                    </figure>
-                    <figcaption>
-                        Una bruja, en términos generales, es una persona, típicamente una mujer, que se cree que posee poderes mágicos y que puede ejercer magia, tanto para el bien como para el mal.
-                    </figcaption>
-                </section>
-            </aside>
-            <footer>
-                <nav>
-                    <h3>Casa de brujas</h3>
-                    <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
-                </nav>
-                <nav>
-                    <h3>Casa de brujas</h3>
-                    <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
-                </nav>
-                <nav>
-                    <h3>Casa de brujas</h3>
-                    <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
-                </nav>
-                <nav>
-                    <h3>Casa de brujas</h3>
-                    <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
-                </nav>
-            </footer>
+        <main id="main">
+            <div class="div1">
+              <div class="div2">
+               <h1 class="h1">seccion 1</h1>
+               <div class="div3">
+                   <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
+                   <article class="art1">casa embrujada</article>
+                   <p>La "caza de brujas" (witch hunt) se refiere a la persecución, acusación y, en algunos casos, ejecución de personas, principalmente mujeres, por brujería.</p>
+               </div>
+               <br>
+               <div class="div3">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLNs4W5jKSmd6_m7J2IKuvvAJO9ecfaFrsXg&s" width="100px" height="100px">
+                   <article class="art2">brujas</article>
+                   <br>
+                   <p>Se cuenta que tiempo atrás, por los vertientes de la Barroca, se reunían las brujas para cantar y bailar. En una de estas reuniones en plena noche, un jorobado</p>
+               </div>
+                   <h1 class="h1">seccion 2</h1>
+               <div class="div3">
+                   <img src="https://media.istockphoto.com/id/502896185/es/foto/magia-de-libro.jpg?s=612x612&w=0&k=20&c=CVhzcmqgt6zGbjgwOX3gGyS8h8kIqKZGxsIU3cPjW3E=" width="100px" height="100px">
+                   <article>Embrujo</article>
+                   <br>
+                   <p>Explora 4.835 fotografías e imágenes de stock sobre libro de hechizos de bruja o realiza una nueva búsqueda para encontrar más fotografías e imágenes de stock.</p>
+               </div>
+               <div class="div3">
+                   <img src="https://cdn-icons-png.flaticon.com/512/6515/6515339.png" width="100px" height="100px">
+                   <article>Escoba</article>
+                   <br>
+                   <p>Una escoba de bruja es una deformidad en una planta leñosa, típicamente un árbol, en la cual la estructura natural de la planta se ve modificada.</p>
+               </div>
+              </div>
+              <div class="div4">
+               <aside id="aside">
+                   <nav id="nav">
+                       <a class="a" href="https://es.wikipedia.org/wiki/Bruja">Historia de las brujas</a>
+                       <br>
+                       <br>
+                       <a class="a" href="https://www.planetadelibros.com/blog/actualidad/15/articulo/libros-sobre-brujas/309">libros de las brujas</a>
+                   </nav>
+                   <br>
+                   <br>
+                    <div class="div5">
+                        <h1 class="h1">seccion 3</h1>
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq7QBm4ad6eyKtFOHb0g5kYAvF6uZaNtx34Q&s" > 
+                    </div>
+               </aside>
+              </div>
+            </div>
         </main>
-      
+        <footer>
+            <div class="div6">
+            <nav>
+                <h3>Casa de brujas</h3>
+                <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
+            </nav>
+            <nav>
+                <h3>Casa de brujas</h3>
+                <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
+            </nav>
+            <nav>
+                <h3>Casa de brujas</h3>
+                <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
+            </nav>
+            <nav>
+                <h3>Casa de brujas</h3>
+                <img src="https://i.pinimg.com/736x/cd/12/e9/cd12e9a8e27c07fb69355eaad7c1aa0f.jpg" width="100px" height="100px">
+            </nav>
+            </div>
+        </footer>
     </body>
     </html>
